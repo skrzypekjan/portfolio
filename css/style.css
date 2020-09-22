@@ -45,7 +45,7 @@ h4 {
       margin-bottom: 0;
 }
 
-p {
+p, ul {
       margin: 20px 0;
       color: #8D8273;
       line-height: 24px;
@@ -274,6 +274,7 @@ nav a#toggle-btn {
       grid-gap: 80px;
       grid-template-columns: repeat(2, 1fr);
       text-align: left;
+      margin-bottom: 2em;
 }
 @media screen and (max-width: 580px) {
       .portfolio-content {
@@ -284,8 +285,8 @@ nav a#toggle-btn {
       }
 }
 
-.left{
-      text-align: left;
+#portfolio h2 {
+      margin-bottom: 2em;
 }
 
 /* subscribe section */
