@@ -11,6 +11,19 @@ body {
       padding: 0 3rem;
 }
 
+.container h1{
+      font-weight: 600;
+      margin-top: 0px;
+      margin-bottom: 8px;
+}
+
+.w3-container {
+      max-width: 1200px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 3rem;
+}
+
 @media screen and (max-width: 580px) {
       .container {
             padding: 0 2rem;
@@ -61,7 +74,7 @@ img {
       width: 10%;
       margin: 0%;
       padding: 0%;
-      float: left;
+      float: right;
 }
 
 button {
@@ -190,7 +203,7 @@ nav a#toggle-btn {
       margin: 0;
       padding: 0;
       overflow-y: hidden;
-      background: url(../images/background.jpg);
+      background: url(../images/programer.jpg);
 }
 
 .section-hero .container {
@@ -363,7 +376,7 @@ nav a#toggle-btn {
       display: block;
       top: 50%;
       transform: translateY(-50%);
-      left: -16rem;
+      left: -22rem;
 }
 
 .timeline .date::before{
@@ -372,11 +385,12 @@ nav a#toggle-btn {
 }
 
 
-/* subscribe section */
+/* contact section */
 
 #contact {
       background: #343233;
       padding: 8em 0;
+      text-align: center;
 }
 
 #contact h3 {
@@ -428,10 +442,14 @@ textarea::placeholder{
       list-style-type: none;
 }
 
-#mails{
+.mail{
       display: block;
       margin-left: auto;
       margin-right: auto;
+      padding: 20px;
+      font-family: Roboto;
+      font-weight: 400;
+      color: rgb(211, 165, 100);
 }
 
 /* footer */
