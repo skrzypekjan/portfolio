@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="contact form example">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
     <title>Portfolio Jan Skrzypkowski</title>
     <!-- css -->
@@ -247,14 +248,23 @@
                         <div class="contact-content">
                               <h1>Contact</h1>
                               <h3>Let's work together</h3>
-                              <form class="mail" method="POST">
+                              <form class="gform" method="POST" data-email="example@email.net"
+                              action="https://script.google.com/macros/s/AKfycbyE7axDHA-fT50pmKU8QQCHB4tgy5FG2CoIeA5G/exec">
+                                    <div class="form-elements">
                                     <lebel for="name">Name:</lebel><br>
-                                    <input type="text" name="name" id="name" placeholder="Enter your name..." required><br>
+                                    <input type="text" name="name" id="name" placeholder="Enter your name..."><br>
                                     <lebel for="email">Email:</lebel><br>
-                                    <input type="email" name="email" id="email" placeholder="Enter your email..." required><br>
-                                    <lebel for="email">Message:</lebel><br>
+                                    <input type="email" name="email" id="email" placeholder="Enter your email..."><br>
+                                    <lebel for="message">Message:</lebel><br>
                                     <textarea name="message" id="message" placeholder="Enter your message..." cols="10" rows="10"></textarea>
-                                    <input type="submit" value="Submit" onclick="sendEmail()">
+                                    <span class="email-invalid" style="display:none">
+                                          Must be a valid email address
+                                    </span>
+                                    <input type="submit" value="Submit">
+                                    </div>
+                                    <div class="thankyou_message" style="display:none;">
+                                          <h2><em>Thanks for contacting me! I will get back to you soon!</em></h2>
+                                    </div>
                               </form>
                         </div>
                   </div>
@@ -267,6 +277,7 @@
       </footer>
 
       <script src="js/script.js"></script>
-      <script src="js/email.js"></script>
+      <script src="js/mail.js"></script>
+      <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 </html>
